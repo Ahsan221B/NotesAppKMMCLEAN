@@ -59,6 +59,13 @@ kotlin {
     }
 }
 
+sqldelight{
+    database("NoteDatabase"){
+        packageName = "com.iahsanmustafa.notesapp_kmm_clean.database"
+        sourceFolders = listOf("sqldelight")
+    }
+}
+
 android {
     namespace = "com.iahsanmustafa.notesapp_kmm_clean"
     compileSdk = 32
